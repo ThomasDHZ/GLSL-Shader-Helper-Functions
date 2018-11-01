@@ -1,0 +1,19 @@
+vec3 InverseColor (in vec3 Color) 
+{
+    return vec3(1.0 - Color.r, 1.0 - Color.g, 1.0 - Color.b);
+}
+
+vec3 ApplyLighting(in vec3 Color, in vec3 LightWeight)
+{
+    return(Color * LightWeight);
+}
+
+mat2 Scale(vec2 scale)
+{
+	return mat2(scale.x, 0.0, 0.0, scale.y);
+}
+
+mat2 Rotate(float Angle)
+{
+    return mat2(cos(Angle),-sin(Angle), sin(Angle),cos(Angle));
+}

@@ -1,0 +1,1 @@
+Starting to learn shader programming. This doc contains some helpful functions for shader programing. So far, untested on real models.
